@@ -1,0 +1,4 @@
+<Layout src="main.html" :title="writings.title" :description="writings.description" current="/writing">
+    <SectionsArticle :heading="writings.title" :dateline="writings.dateline" :body="writings.content" />
+    <SectionsMoreEntries :items="entries" :current="writings.slug" heading="More writing" allText="Everything I have written" allHref="/writing" />
+</Layout>
